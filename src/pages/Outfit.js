@@ -4,7 +4,7 @@ import Productbanner from '../components/productbanner/Productbanner'
 function Outfit() {
   return (
     <div>
-        <Productbanner/>
+        <Productbanner title="Outfits"/>
         <Rowposter title="Similar products"/>
         <Rowposter title="Trending products"/>
     </div>

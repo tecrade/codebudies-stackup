@@ -5,7 +5,7 @@ import Rowposter from '../components/rowposter/Rowposter'
 function Electronics() {
   return (
     <div>
-        <Productbanner/>
+        <Productbanner title="Electronics & Appliances"/>
         <Rowposter title="Similar products"/>
         <Rowposter title="Trending products"/>
 

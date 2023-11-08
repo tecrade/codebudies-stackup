@@ -4,7 +4,7 @@ import Rowposter from '../components/rowposter/Rowposter'
 function Books() {
   return (
     <div>
-        <Productbanner/>
+        <Productbanner title="Books"/>
         <Rowposter title="Similar products"/>
         <Rowposter title="Trending products"/>
     </div>

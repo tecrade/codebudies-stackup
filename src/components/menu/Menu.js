@@ -2,15 +2,18 @@ import React from 'react'
 import { NavLink} from 'react-router-dom'
 import './Menu.css'
 
-const obj=[{name:'Home',path:"/"},{name:'Trending',path:"/trending"},{name:'Electronics and Gadgets',path:"/electronics"},{name:'Homeappliances',path:"/homeappliances"},{name:'Outfits',path:"/outfit"},{name:'Books',path:"/books"}]
+const obj=[{name:'Trending',path:"/trending"},{name:'Electronics and Gadgets',path:"/electronics"},{name:'Homeappliances',path:"/homeappliances"},{name:'Outfits',path:"/outfit"},{name:'Books',path:"/books"}]
 
 function Menu() {
   return (
     <div className='menu'>
         <ul className='menulist'>
-          <li>Home</li>
-          <li>Cart</li>
-          <li>Whishlist</li>
+          <li><NavLink className="menunavlink" to='/'><i class="fa fa-home" id='home'></i>
+</NavLink></li>
+          <li><i class="material-icons">local_grocery_store</i>
+cart</li>
+          <li><i class="material-icons">add</i>
+Whishlist</li>
         </ul>
         <hr></hr>
         <h3>Catogories</h3>

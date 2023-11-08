@@ -3,7 +3,8 @@
     background-color: black;
     width:40vh;
     margin-top:-4rem;
-    z-index:6;
+    position:fixed;
+    border-radius:10px;
 }
 .menulist{
     color:white;
@@ -15,9 +16,17 @@
     text-decoration: none;
     background-color:black;
     text-align: center;
+    padding:3px;
     font-size: 20px;
     width:200px;
 }
 .menunavlink{
     color:white;
+}
+.menulist li:hover{
+    color:black;
+    background-color: white;
+}
+.menunavlink:hover{
+    color:black;
 }

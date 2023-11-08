@@ -10,3 +10,20 @@
     height:50vh;
     width:auto;
 }
+.btn.productbannerbtn{
+    background-color: transparent;
+    border-style:none;
+    margin-right:3rem;
+    font-size:25px;
+    border-radius:50%;
+    text-align: center;
+}
+.productdiscription{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+.btn.productbannerbtn:hover{
+    color:white;
+    background-color: black;
+}
