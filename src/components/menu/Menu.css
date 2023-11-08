@@ -1,0 +1,23 @@
+.menu{
+    color: white;
+    background-color: black;
+    width:40vh;
+    margin-top:-4rem;
+    z-index:6;
+}
+.menulist{
+    color:white;
+    background-color: black;
+    list-style-type: none;
+    margin-left:-2rem;
+}
+.menulist li{
+    text-decoration: none;
+    background-color:black;
+    text-align: center;
+    font-size: 20px;
+    width:200px;
+}
+.menunavlink{
+    color:white;
+}

@@ -1,0 +1,32 @@
+.rowposter{
+    background-color:white;
+    margin-top:2rem;
+    margin-left:1rem;
+}
+.postercontainer{
+    display:flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.poster{
+    min-height: 150px;
+    background-color:darkgray;
+    min-width:200px;
+    margin-right:-0.5rem;
+    background-size:cover;
+    margin-left:2rem;
+    border-radius:10px;
+}
+.poster:hover{
+    transform: scale(1.1);
+}
+.postercontainer::-webkit-scrollbar{
+    display: none;
+}
+.productdetails{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-top:15vh;
+    margin-left:1rem;
+}

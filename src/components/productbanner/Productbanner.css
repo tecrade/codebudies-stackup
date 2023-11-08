@@ -1,0 +1,12 @@
+.productbanner{
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows:auto;
+    height:50vh;
+    width:100%;
+    background-color: silver;
+}
+.productimage{
+    height:50vh;
+    width:auto;
+}

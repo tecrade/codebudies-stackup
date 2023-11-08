@@ -1,0 +1,26 @@
+.header{
+    background-color:#283E56;
+    color: white;
+    height:10vh;
+    font-size:28px;
+}
+.btn.login{
+    background-color:transparent;
+    border-style: none;
+    text-align:center;
+    margin-left:10vh;
+    color: white;
+    font-size:20px;
+}
+.logo{
+     margin-left:3vh;
+}
+#cart{
+    margin-left:150vh;
+}
+#favorite{
+    margin-left:5vh;
+}
+#cartnum{
+font-size:25px;
+}

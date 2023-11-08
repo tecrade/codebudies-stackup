@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter,Routes,Route } from 'react-router-dom';
+import Electronics from './pages/Electronics';
+import Homeappliances from './pages/Homeappliances';
+import Trending from './pages/Trending';
+import Home from './pages/Home';
+import Outfit from './pages/Outfit';
+import Books from './pages/Books';
+import Navbar from './components/navbar/Navbar';
+import Search from './components/search/Search';
+import { useState } from 'react';
+import { AppContext } from './AppContext';
+import Menu from './components/menu/Menu';
+
 
 function App() {
+  const[menuflag,setMenuflag]=useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className='App'>
+      <HashRouter>
+        <AppContext.Provider value={{menuflag,setMenuflag}}>
+      <Navbar/>
+      <Search/>
+      {menuflag && <Menu/>}
+       <Routes>
+       <Route path='/' exact element={<Home/>}></Route>
+        <Route path='/electronics' element={<Electronics/>}></Route>
+        <Route path='/homeappliances' element={<Homeappliances/>}></Route>
+        <Route path='/outfit' element={<Outfit/>}></Route>
+        <Route path='/trending' element={<Trending/>}></Route>
+        <Route path='/books' element={<Books/>}></Route>
+       </Routes>
+       </AppContext.Provider>
+    </HashRouter>
     </div>
   );
 }
