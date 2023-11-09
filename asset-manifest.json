@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/http//tecrade.github.io/codebudies-stackup/static/css/main.8bcdf873.css",
-    "main.js": "/http//tecrade.github.io/codebudies-stackup/static/js/main.537f5b3a.js",
-    "static/js/787.2ce8686d.chunk.js": "/http//tecrade.github.io/codebudies-stackup/static/js/787.2ce8686d.chunk.js",
-    "index.html": "/http//tecrade.github.io/codebudies-stackup/index.html",
-    "main.8bcdf873.css.map": "/http//tecrade.github.io/codebudies-stackup/static/css/main.8bcdf873.css.map",
-    "main.537f5b3a.js.map": "/http//tecrade.github.io/codebudies-stackup/static/js/main.537f5b3a.js.map",
-    "787.2ce8686d.chunk.js.map": "/http//tecrade.github.io/codebudies-stackup/static/js/787.2ce8686d.chunk.js.map"
+    "main.css": "/git//tecrade.github.io/codebudies-stackup/static/css/main.8bcdf873.css",
+    "main.js": "/git//tecrade.github.io/codebudies-stackup/static/js/main.b5246036.js",
+    "static/js/787.2ce8686d.chunk.js": "/git//tecrade.github.io/codebudies-stackup/static/js/787.2ce8686d.chunk.js",
+    "index.html": "/git//tecrade.github.io/codebudies-stackup/index.html",
+    "main.8bcdf873.css.map": "/git//tecrade.github.io/codebudies-stackup/static/css/main.8bcdf873.css.map",
+    "main.b5246036.js.map": "/git//tecrade.github.io/codebudies-stackup/static/js/main.b5246036.js.map",
+    "787.2ce8686d.chunk.js.map": "/git//tecrade.github.io/codebudies-stackup/static/js/787.2ce8686d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8bcdf873.css",
-    "static/js/main.537f5b3a.js"
+    "static/js/main.b5246036.js"
   ]
 }
