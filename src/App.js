@@ -1,4 +1,4 @@
-import { HashRouter,Routes,Route } from 'react-router-dom';
+import { HashRouter,Routes,Route, NavLink } from 'react-router-dom';
 import Electronics from './pages/Electronics';
 import Homeappliances from './pages/Homeappliances';
 import Trending from './pages/Trending';
@@ -11,17 +11,19 @@ import { useState } from 'react';
 import { AppContext } from './AppContext';
 import Menu from './components/menu/Menu';
 
-
 function App() {
   const[menuflag,setMenuflag]=useState(false)
+  const[posterbanner,setPosterbanner]=useState({})
+
   return (
     
     <div className='App'>
       <HashRouter>
-        <AppContext.Provider value={{menuflag,setMenuflag}}>
+        <AppContext.Provider value={{menuflag,setMenuflag,posterbanner,setPosterbanner}}>
       <Navbar/>
       <Search/>
       {menuflag && <Menu/>}
+      {posterbanner && <NavLink to={posterbanner.path}/>}
        <Routes>
        <Route path='/' exact element={<Home/>}></Route>
         <Route path='/electronics' element={<Electronics/>}></Route>
@@ -33,6 +35,7 @@ function App() {
        </AppContext.Provider>
     </HashRouter>
     </div>
+    
   );
 }
 

@@ -16,12 +16,13 @@
     text-decoration: none;
     background-color:black;
     text-align: center;
-    padding:3px;
+    padding:5px;
     font-size: 20px;
     width:200px;
 }
 .menunavlink{
     color:white;
+    padding:15px;
 }
 .menulist li:hover{
     color:black;

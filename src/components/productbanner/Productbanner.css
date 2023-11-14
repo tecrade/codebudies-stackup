@@ -4,11 +4,15 @@
     grid-template-rows:auto;
     height:50vh;
     width:100%;
-    background-color: silver;
+    background-color:white;
 }
 .productimage{
     height:50vh;
     width:auto;
+    border-radius: 10px;
+    border-color: yellow;
+    border-style: solid;
+    margin-left:3rem;
 }
 .btn.productbannerbtn{
     background-color: transparent;
@@ -21,6 +25,7 @@
 .productdiscription{
     display: grid;
     grid-template-columns: auto ;
+    font-weight: bold;
     grid-template-rows: auto auto auto auto auto auto;
 }
 .btn.productbannerbtn:hover{

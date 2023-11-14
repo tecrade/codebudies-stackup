@@ -1,27 +1,38 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Rowposter.css'
-const obj=[{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'},{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'},{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'},{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'},{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'},{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'},{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'},{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'},{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'},{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'},{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'},{img:'/home/tecrade/Desktop/stackup/minekart/src/resources/prof1.jpg'}]
+import { getTrending } from '../../Data'
+import {useNavigate } from 'react-router-dom'
 function Rowposter(props) {
-    const[poster]=useState(obj)
+const [data,setData]=useState([])
+useEffect(()=>{
+
+  getTrending('Trending','name','!=','').then((element)=>{
+    element?setData(element):setData([])
+    })
+},[])
+
+let navigate=useNavigate();
+
+
   return (
     <div className='rowposter'>
         <h2>{props.title}</h2>
+
         <div className='postercontainer'>
            {
-            poster.map((obj,index)=>{
+           data.map((obj,index)=>{
               return(
-                <div className='poster'>
-                <img   key={index} src={obj.img} alt='POSTER'/>
+                <div className='poster' key={index} onClick={()=>{
+                  navigate('/trending',{state:{obj}})
+                }}>
+                <img src={obj.imgurl} id='posterimg' alt='POSTER'/>
                 <div className='productdetails'> 
-                <label>Name</label>
-                <label>Catagory</label>
-                <label>price</label>
-                <div><i class="material-icons">star_half</i><label>4.5</label></div>
-
-
-
+                <label>Name:{obj.name}</label>
+                <label>Catagory:{obj.category}</label>
+                <label>price:{obj.price}</label>
+                <div><i class="material-icons">star_half</i><label>{obj.rating}</label></div>
                 </div>
+                {console.log(obj.name)}
                 </div>
               )
             })
@@ -30,5 +41,4 @@ function Rowposter(props) {
     </div>
   )
 }
-
 export default Rowposter

@@ -13,7 +13,7 @@ function Menu() {
           <li><i class="material-icons">local_grocery_store</i>
 cart</li>
           <li><i class="material-icons">add</i>
-Whishlist</li>
+Wishlist</li>
         </ul>
         <hr></hr>
         <h3>Catogories</h3>
